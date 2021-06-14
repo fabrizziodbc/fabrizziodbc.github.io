@@ -1,2 +1,2 @@
 # fabrizziodbc.github.io
-Horario de los siguientes meses, hecho con CSS y HTML
+Proyectos para practicar y reforzar conocimientos😎
