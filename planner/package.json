@@ -1,0 +1,16 @@
+{
+  "name": "planner",
+  "version": "1.0.0",
+  "description": "Planeador semanal hecho con HTML y CSS (SASS)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CSS",
+    "GRID",
+    "FLEXBOX"
+  ],
+  "author": "FabrizzioDBC",
+  "license": "ISC"
+}

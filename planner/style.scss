@@ -1,0 +1,170 @@
+$font-family__main:'Nunito', sans-serif;
+$font-size__time: 1.4rem;
+$font-size__title: 2.4rem;
+$font-size__text: 1.4rem;
+$font-size__tiny-text: 0.7rem;
+$font-weight__bold: 600;
+$font-weight__light: 200;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@mixin glassmorphism-effect{
+    background: rgba( 149, 154, 197, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+body{
+    font-size: 62.5%;
+    min-height: 100vh;
+    min-width: 320px;
+    padding: 10vh 2vw;
+    display: grid;
+    place-items: center;
+    font-family: $font-family__main;
+    background: rgb(39,40,61);
+    background: linear-gradient(166deg, rgba(39,40,61,1) 0%, rgba(52,61,94,1) 99%);
+        .container{
+            @include glassmorphism-effect;
+            padding: 24px;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-gap: 20px;
+            height: 100%;
+            width: fit-content;
+            margin: 0 auto;
+            .container-left{
+                height: fit-content;
+                position: sticky;
+                top: 20px;
+            }
+            .objectives{
+                @include glassmorphism-effect;
+                height: fit-content;
+                padding: 24px;
+                &__title{
+                    font-size: $font-size__title;
+                    font-weight: $font-weight__bold;
+                }
+                &__sub-title{
+                    font-size: $font-size__text;
+                    margin-bottom: 15px;
+                }
+                &__item{
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 0;
+                    font-weight: $font-weight__bold;
+                    .objetives__img{
+                        @include glassmorphism-effect;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        height: 40px;
+                        min-width: 40px;
+                        img{
+                            width: 25px;
+                        }
+                    }
+                    p{
+                        font-size: $font-size__tiny-text
+                    }
+                }
+            }
+            .reminder{
+                margin-top: 24px;
+                @extend .objectives;
+                &__title{
+                    font-size: $font-size__title;
+                    font-weight: $font-weight__bold;
+                }
+                &__item{
+                    @extend .objectives__item;
+                }
+            }
+            .planner{
+                @include glassmorphism-effect;
+                padding: 24px;
+                &__title{
+                    @extend .objectives__title;
+                }
+                &__sub-title{
+                    @extend .objectives__sub-title;
+                }
+                &__week{
+                    display: grid;
+                    grid-template-columns: repeat(7, minmax(100px, 1fr));
+                    grid-gap: 20px;
+                    .planner__day{
+                        .planner_day-name{
+                            @include glassmorphism-effect;
+                            font-weight: $font-weight__bold;
+                            position: sticky;
+                            top: 20px;
+                            font-size: $font-size__text;
+                            margin-bottom: 15px;
+                            z-index: 3;
+                            text-align: center;
+                        }
+                        .card{
+                            display: grid;
+                            grid-template-columns: 1fr 3fr;
+                            grid-template-rows: 1fr;
+                            width: 100%;
+                            height: 100px;
+                            position: relative;
+                            margin-bottom: 20px;
+                            &__tag{
+                                @include glassmorphism-effect;
+                                grid-column: 1 / 3;
+                                grid-row: 1;
+                                z-index: 1;
+                                display: flex;
+                                align-items: center;
+                                border-radius: 16px;
+                                .card__tag-name{
+                                    color: white;
+                                    font-weight: $font-weight__bold;
+                                    font-size: $font-size__tiny-text;
+                                    letter-spacing: 0.08rem;
+                                    padding-right: 7px;
+                                    transform: rotate(180deg);
+                                    writing-mode: vertical-rl;
+                                    text-align: center
+                                }
+                            }
+                            &__activity{
+                                @include glassmorphism-effect;
+                                grid-column: 2 / 3;
+                                grid-row: 1;
+                                z-index: 2;
+                                border-radius: 16px;
+                                display: grid;
+                                justify-content: center;
+                                .card__time{
+                                    margin: 18px 0 -8px 0;
+                                    font-size: $font-size__time;
+                                    font-weight: $font-weight__bold;
+                                    text-align: center;
+                                }
+                                .card__name-activity{
+                                    font-size: $font-size__tiny-text;
+                                    text-align: center;
+                                    font-weight: $font-weight__bold;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+   
+    }
