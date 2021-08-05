@@ -1,0 +1,44 @@
+.mobile-h {
+  display: none;
+}
+
+.mobile-v {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  font-size: 62.5%;
+  min-height: 100vh;
+  max-width: 740px;
+  padding: 10vh 2vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+body .container {
+  padding: 24px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  height: 100%;
+  width: 740px;
+  margin: 0 auto;
+}
+
+body .planner {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  padding: auto;
+  width: 365px;
+}
+
+body .container .planner__week {
+  -ms-grid-columns: (minmax(100px, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(100px, 1fr));
+}
+/*# sourceMappingURL=tablet.css.map */

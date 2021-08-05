@@ -1,0 +1,31 @@
+.mobile-h {
+  display: none;
+}
+.mobile-v {
+  display: flex;
+}
+
+body {
+  font-size: 62.5%;
+  min-height: 100vh;
+  max-width: 740px;
+  padding: 10vh 2vw;
+  display: grid;
+  place-items: center;
+
+  .container {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    height: 100%;
+    width: 740px;
+    margin: 0 auto;
+  }
+  .planner {
+    grid-row: 1;
+    padding: auto;
+    width: 365px;
+  }
+  .container .planner__week {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));}}

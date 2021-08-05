@@ -244,4 +244,8 @@ body .container .planner__week .planner__day .card__activity .card__name-activit
   text-align: center;
   font-weight: 600;
 }
+
+.mobile-v {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
