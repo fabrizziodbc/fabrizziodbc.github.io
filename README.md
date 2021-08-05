@@ -12,7 +12,7 @@ There are a lot to improve and I'm not sure about the colors (I was testing the 
 
 My plan is to do it all over again when the bootcamp is over (or maybe sooner) using newfound knowlege.
 
-[Ver](fabrizziodbc.github.io/schedule)
+[Ver](/schedule)
 
 # Horario Personal
 Projecto personal para practicar CSS GRID y FLEXBOX.
@@ -27,5 +27,5 @@ Quedan cosas por mejorar y aún no me terminan de convencer los colores (Estaba 
 
 El plan es hacerlo desde cero una vez terminado el bootcamp (o antes) utilizando nuevos conocimientos.
 
-[Ver](fabrizziodbc.github.io/planner)
+[Ver](/schedule)
 
