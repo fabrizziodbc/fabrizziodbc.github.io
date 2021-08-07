@@ -1,0 +1,56 @@
+.about {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 40px;
+}
+
+.about div {
+  width: 60%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.about__question {
+  justify-self: baseline;
+}
+
+.about .about-me {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  width: 40%;
+  padding: 0 20px;
+}
+
+.portfolio__grid {
+  row-gap: 35px;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  -ms-grid-columns: (minmax(280px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(280px, 1fr));
+}
+
+.portfolio__project {
+  width: 300px;
+}
+
+.portfolio__title {
+  width: 100%;
+}
+
+.portfolio__img {
+  width: 100%;
+}
+/*# sourceMappingURL=laptop.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACK,AAAD,gBAAO,CAAC;EACN,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,IAAI;EAChB,qBAAqB,EAAE,6BAA6B;CACrD;;AACA,AAAD,mBAAU,CAAC;EACT,KAAK,EAAE,KAAK;CACb;;AAEA,AAAD,iBAAQ,CAAC;EACP,KAAK,EAAE,IAAI;CACZ;;AAEA,AAAD,eAAM,CAAC;EACL,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "laptop-L.scss"
+    ],
+    "names": [],
+    "file": "laptop-L.css"
+}

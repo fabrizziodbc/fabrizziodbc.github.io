@@ -1,0 +1,20 @@
+.portfolio__grid {
+  row-gap: 35px;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  -ms-grid-columns: (minmax(280px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(280px, 1fr));
+}
+
+.portfolio__project {
+  width: 380px;
+}
+
+.portfolio__title {
+  width: 100%;
+}
+
+.portfolio__img {
+  width: 100%;
+}
+/*# sourceMappingURL=laptop-L.css.map */

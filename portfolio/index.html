@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="tablet.css"
+      media="screen and (min-width:768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="laptop.css"
+      media="screen and (min-width:1024px)"
+    />
+    <link
+      rel="stylesheet"
+      href="laptop-L.css"
+      media="screen and (min-width:1440px)"
+    />
+    <script
+      src="https://kit.fontawesome.com/2523a9d4c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./src/font-mfizz/font-mfizz.css">
+    <title>DevBracamonte</title>
+  </head>
+  <body>
+    <div class="loader-container" id="loader">
+      <div class="loader">
+        <div class="line left"></div>
+        <div class="ball"></div>
+        <div class="line right"></div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__background transparent"></div>
+      <a href="#home" class="header__logo">DevBracamonte</a>
+      <span class="header__hamburguer">&equiv;</span>
+      <section class="nav-bar">
+        <ul class="nav-bar__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </section>
+    </header>
+    <main class="main">
+      <section class="cover" id="home">
+        <div class="cover__background"></div>
+        <img
+          class="cover__img"
+          src="./src/circle-cropped.png"
+          alt="Fabrizzio's picture"
+        />
+        <h2 class="cover__description">
+          <span>Hello!<br /></span>I'm Fabrizzio De Bracamonte<br />
+          <span class="writing-effect" id="writing-effect"></span>
+          <div class='icon-scroll'><div/>
+        </h2>
+        
+      </section>
+      <section class="menu_full">
+        <ul class="menu_full__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </section>
+      <section class="about" id="about">
+        <div class="about-me">
+          <div class="title">About</div>
+          <p class="about__question">Who am I?</p>
+          <p class="about__aswer">
+            I'm Fabrizzio De Bracamonte, <br/> Fullstack developer and Tech lover
+          </p>
+          <p class="about__description">
+            I have experience working with MERN stack and agile with SCRUM. <br/>
+            I want to be the best version of myself, so I'm always trying to improve by taking courses (tech, soft skills, English, etc.), reading books or working out.
+          </p>
+          <button class="about__button">
+            <i class="fas fa-file-download fa-1x"></i> Download CV
+          </button>
+        </div>
+        <div>
+          <p class="title">My skills</p>
+          <div class="about__skills-container">
+            <div class="skill">
+              <span class="skill__background"></span>
+              <i class="fab fa-html5 skill__icon"></i>
+              <span class="skill__name">HTML</span>
+            </div>
+            <div class="skill">
+              <span class="skill__background"></span>
+              <i class="fab fa-css3-alt skill__icon"></i>
+              <span class="skill__name">CSS</span>
+            </div>
+            <div class="skill">
+              <span class="skill__background"></span>
+              <i class="fab fa-js skill__icon"></i>
+              <span class="skill__name">JAVASCRIPT</span>
+            </div>
+            <div class="skill">
+              <span class="skill__background"></span>
+              <i class="fab fa-github skill__icon"></i>
+              <span class="skill__name">GITHUB</span>
+            </div>
+            <div class="skill">
+              <span class="skill__background"></span>
+              <i class="fab fa-react skill__icon"></i>
+              <span class="skill__name">REACT</span>
+            </div>
+            <div class="skill">
+              <span class="skill__background"></span>
+              <i class="fab fa-node skill__icon"></i>
+              <span class="skill__name">NODE</span>
+            </div>
+            <div class="skill">
+              <span class="skill__background"></span>
+              <i class="icon-mongodb skill__icon"></i>
+              <span class="skill__name">MONGODB</span>
+            </div>
+            <div class="skill">
+              <span class="skill__background"></span>
+              <i class="graphql-icon skill__icon"></i>
+              <span class="skill__name">GRAPHQL</span>
+            </div>
+            <div class="skill">
+              <span class="skill__background"></span>
+              <i class="icon-postgres skill__icon"></i> 
+              <span class="skill__name">POSTGRESSQL</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <p class="title">Portfolio</p>
+        <div class="portfolio__grid">
+          <div class="portfolio__project">
+            <div class="portfolio__title">
+              <p>DreamTeam</p>
+            </div>
+            <img src="./src/small.jpg" alt="" class="portfolio__img" />
+            <div class="portfolio__hover">
+              <span class="portafolio__background"></span>
+              <div class="portafolio__links">
+                <a href="#" class="portfolio__link"
+                  >Github <i class="fab fa-github skill__icon"></i>
+                </a>
+                <a href="#" class="portfolio__link"
+                  >Open in a new tab <i class="fas fa-arrow-circle-right"></i
+                ></a>
+              </div>
+              <a href="#" class="portfolio__more">Learn more</a>
+            </div>
+          </div>
+          <div class="portfolio__project">
+            <div class="portfolio__title">
+              <p>Tic Tac Toe</p>
+            </div>
+            <img src="./src/small.jpg" alt="" class="portfolio__img" />
+            <div class="portfolio__hover">
+              <span class="portafolio__background"></span>
+              <div class="portafolio__links">
+                <a href="#" class="portfolio__link"
+                  >Github <i class="fab fa-github skill__icon"></i>
+                </a>
+                <a href="#" class="portfolio__link"
+                  >Open in a new tab <i class="fas fa-arrow-circle-right"></i
+                ></a>
+              </div>
+              <a href="#" class="portfolio__more">Learn more</a>
+            </div>
+          </div>
+          <div class="portfolio__project">
+            <div class="portfolio__title">
+              <p>Portfolio</p>
+            </div>
+            <span class="portfolio__img portfolio-img"></span>
+            <div class="portfolio__hover">
+              <span class="portafolio__background"></span>
+              <div class="portafolio__links">
+                <a href="#" class="portfolio__link"
+                  >Github <i class="fab fa-github skill__icon"></i>
+                </a>
+                <a href="#" class="portfolio__link"
+                  >Open in a new tab <i class="fas fa-arrow-circle-right"></i
+                ></a>
+              </div>
+              <a href="#" class="portfolio__more">Learn more</a>
+            </div>
+          </div>
+          <div class="portfolio__project">
+            <div class="portfolio__title">
+              <p>Platzi Video</p>
+            </div>
+            <img src="./src/small.jpg" alt="" class="portfolio__img" />
+            <div class="portfolio__hover">
+              <span class="portafolio__background"></span>
+              <div class="portafolio__links">
+                <a href="#" class="portfolio__link"
+                  >Github <i class="fab fa-github skill__icon"></i>
+                </a>
+                <a href="#" class="portfolio__link"
+                  >Open in a new tab <i class="fas fa-arrow-circle-right"></i
+                ></a>
+              </div>
+              <a href="#" class="portfolio__more">Learn more</a>
+            </div>
+          </div>
+          <div class="portfolio__project">
+            <div class="portfolio__title">
+              <p>Schedule</p>
+            </div>
+            <span class="portfolio__img schedule-img"></span>
+            <div class="portfolio__hover">
+              <span class="portafolio__background"></span>
+              <div class="portafolio__links">
+                <a href="https://github.com/fabrizziodbc/fabrizziodbc.github.io" target="_blank" class="portfolio__link"
+                  >Github <i class="fab fa-github skill__icon"></i>
+                </a>
+                <a href="https://fabrizziodbc.github.io/schedule/" target="_blank" class="portfolio__link"
+                  >Open in a new tab <i class="fas fa-arrow-circle-right"></i
+                ></a>
+              </div>
+              <a href="#" class="portfolio__more">Learn more</a>
+            </div>
+          </div>
+          <div class="portfolio__project">
+            <div class="portfolio__title">
+              <p>Schedule</p>
+            </div>
+            <img src="./src/small.jpg" alt="" class="portfolio__img" />
+            <div class="portfolio__hover">
+              <span class="portafolio__background"></span>
+              <div class="portafolio__links">
+                <a href="#" class="portfolio__link"
+                  >Github <i class="fab fa-github skill__icon"></i>
+                </a>
+                <a href="#" class="portfolio__link"
+                  >Open in a new tab <i class="fas fa-arrow-circle-right"></i
+                ></a>
+              </div>
+              <a href="#" class="portfolio__more">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <p class="title">Contact</p>
+        <div class="contact__container">
+          <a
+            href="mailto:fabrizziodbc@gmail.com"
+            target="_blank"
+            class="contact-el"
+          >
+            <span class="contact-el__background"></span>
+            <i class="fas fa-envelope fa-5x"></i>
+            <span class="contact-el__name">Mail me</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/fabrizziodbc/"
+            target="_blank"
+            class="contact-el"
+          >
+            <span class="contact-el__background"></span>
+            <i class="fab fa-linkedin-in fa-5x"></i>
+            <span class="contact-el__name">Connect with me</span>
+          </a>
+          <a
+            href="https://github.com/fabrizziodbc/"
+            target="_blank"
+            class="contact-el"
+          >
+            <span class="contact-el__background"></span>
+            <i class="fab fa-github fa-5x"></i>
+            <span class="contact-el__name">Follow me</span>
+          </a>
+          <a
+            href="https://twitter.com/Fabrizziodbc"
+            target="_blank"
+            class="contact-el"
+          >
+            <span class="contact-el__background"></span>
+            <i class="fab fa-twitter fa-5x"></i>
+            <span class="contact-el__name">Follow me</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Made with ❤</p>
+      <p>© 2021 Fabrizzio De Bracamonte</p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

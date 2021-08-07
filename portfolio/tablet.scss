@@ -1,0 +1,46 @@
+.header__hamburguer {
+  display: none;
+}
+
+.header {
+  .nav-bar {
+    display: flex;
+  }
+
+  .nav-bar__links {
+    display: flex;
+  }
+}
+.about {
+  justify-content: center;
+  align-self: center;
+  .about-me {
+    align-self: center;
+    width: 50%;
+    margin-left: 30px;
+  }
+  &__button {
+    align-self: center;
+    justify-self: baseline;
+    padding: 15px;
+    width: 40%;
+    margin: 15px 0;
+    font-weight: bold;
+  }
+  &__skills-container {
+    row-gap: 25px;
+  }
+  .skill {
+    padding: 5px;
+    min-width: 120px;
+    height: 120px;
+
+    &__icon {
+      font-size: var(--font-size-icon);
+    }
+
+    &__name {
+      font-size: 1.2rem;
+    }
+  }
+}

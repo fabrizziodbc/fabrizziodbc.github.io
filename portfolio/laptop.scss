@@ -1,0 +1,39 @@
+.about {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  div {
+    width: 60%;
+    display: grid;
+    place-items: center;
+  }
+  &__question {
+    justify-self: baseline;
+  }
+  .about-me {
+    align-self: baseline;
+    width: 40%;
+    padding: 0 20px;
+  }
+}
+.portfolio {
+  &__grid {
+    row-gap: 35px;
+    column-gap: 15px;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+  }
+  &__project {
+    width: 300px;
+  }
+
+  &__title {
+    width: 100%;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
