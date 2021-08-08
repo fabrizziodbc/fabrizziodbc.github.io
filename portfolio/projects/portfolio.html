@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./portfolio.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link
+      rel="stylesheet"
+      href="../style/tablet.css"
+      media="screen and (min-width:768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="../style/laptop.css"
+      media="screen and (min-width:1024px)"
+    />
+    <link
+      rel="stylesheet"
+      href="../style/laptop-L.css"
+      media="screen and (min-width:1440px)"
+    />
+    <script
+      src="https://kit.fontawesome.com/2523a9d4c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../src/font-mfizz/font-mfizz.css" />
+    <title>DevBracamonte</title>
+  </head>
+  <body>
+    <div class="loader-container" id="loader">
+      <div class="loader">
+        <div class="line left"></div>
+        <div class="ball"></div>
+        <div class="line right"></div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__background transparent"></div>
+      <a href="#home" class="header__logo">DevBracamonte</a>
+      <span class="header__hamburguer">&equiv;</span>
+      <section class="nav-bar">
+        <ul class="nav-bar__links">
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </section>
+    </header>
+    <main class="main">
+      <section class="carrousel__container">
+        <ul class="carrousel">
+          <li id="slide__1">
+            <img src="../src/projects/portfolio/home-desk.png" alt="" />
+          </li>
+          <li id="slide__2">
+            <img src="../src/projects/portfolio/home-mob.png" alt="" />
+          </li>
+          <li id="slide__3">
+            <img src="../src/projects/portfolio/about-desk.png" alt="" />
+          </li>
+        </ul>
+        <ul class="carrousel__menu">
+          <li><a href="#slide__1"></a></li>
+          <li><a href="#slide__2"></a></li>
+          <li><a href="#slide__3"></a></li>
+        </ul>
+      </section>
+      <section class="menu_full">
+        <ul class="menu_full__links">
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </section>
+      <section class="about" id="about">
+        <div class="about-me">
+          <div class="title">About</div>
+          <p class="about__description">
+            A personal project to practice Frontend and show my
+            projects.<br/> I researched many portfolios for inspiration and then
+            tried to do it myself without looking at their code.<br/>
+            <strong>Mobile first.</strong><br/>Made it with love using:<strong> HTML, CSS, SASS, JavaScript.</strong>
+          </p>
+        </div>
+        <div>
+          <p class="title">Technologies</p>
+          <div class="about__skills-container technologies-container">
+            <div class="skill">
+              <span class="skill__background"></span>
+              <i class="fab fa-html5 skill__icon"></i>
+              <span class="skill__name">HTML</span>
+            </div>
+            <div class="skill">
+              <span class="skill__background"></span>
+              <i class="fab fa-css3-alt skill__icon"></i>
+              <span class="skill__name">CSS</span>
+            </div>
+            <div class="skill">
+              <span class="skill__background"></span>
+              <i class="fab fa-js skill__icon"></i>
+              <span class="skill__name">JAVASCRIPT</span>
+            </div>
+            <div class="skill">
+              <span class="skill__background"></span>
+              <i class="fab fa-github skill__icon"></i>
+              <span class="skill__name">GITHUB</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <p class="title">Contact</p>
+        <div class="contact__container">
+          <a
+            href="mailto:fabrizziodbc@gmail.com"
+            target="_blank"
+            class="contact-el"
+          >
+            <span class="contact-el__background"></span>
+            <i class="fas fa-envelope fa-5x"></i>
+            <span class="contact-el__name">Mail me</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/fabrizziodbc/"
+            target="_blank"
+            class="contact-el"
+          >
+            <span class="contact-el__background"></span>
+            <i class="fab fa-linkedin-in fa-5x"></i>
+            <span class="contact-el__name">Connect with me</span>
+          </a>
+          <a
+            href="https://github.com/fabrizziodbc/"
+            target="_blank"
+            class="contact-el"
+          >
+            <span class="contact-el__background"></span>
+            <i class="fab fa-github fa-5x"></i>
+            <span class="contact-el__name">Follow me</span>
+          </a>
+          <a
+            href="https://twitter.com/Fabrizziodbc"
+            target="_blank"
+            class="contact-el"
+          >
+            <span class="contact-el__background"></span>
+            <i class="fab fa-twitter fa-5x"></i>
+            <span class="contact-el__name">Follow me</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Made with ❤</p>
+      <p>© 2021 Fabrizzio De Bracamonte</p>
+    </footer>
+    <script src="../index.js"></script>
+  </body>
+</html>

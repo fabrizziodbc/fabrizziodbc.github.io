@@ -59,4 +59,12 @@
 .about .skill__name {
   font-size: 1.2rem;
 }
+
+.carrousel {
+  height: 280px;
+}
+
+.carrousel li img {
+  height: 280px;
+}
 /*# sourceMappingURL=tablet.css.map */

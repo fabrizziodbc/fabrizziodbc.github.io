@@ -241,7 +241,7 @@ body {
 }
 
 .cover__background {
-  background-image: url(./src/small.jpg);
+  background-image: url(../src/small.jpg);
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -396,8 +396,11 @@ body {
   margin: 15px 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (minmax(130px, 220px))[3];
+      grid-template-columns: repeat(3, minmax(130px, 220px));
   grid-auto-rows: auto;
   gap: 15px;
 }
@@ -506,11 +509,11 @@ body {
 }
 
 .portfolio .portfolio-img {
-  background-image: url(./src/projects/portfolio/about-desk.png);
+  background-image: url(../src/projects/portfolio/about-desk.png);
 }
 
 .portfolio .schedule-img {
-  background-image: url(./src/projects/planner/schedule.png);
+  background-image: url(../src/projects/planner/schedule.png);
 }
 
 .portfolio .portafolio__links {
@@ -744,7 +747,7 @@ body {
 .graphql-icon {
   width: 50%;
   height: 60%;
-  background-image: url(./src/icons8-graphql.svg);
+  background-image: url(../src/icons8-graphql.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -753,5 +756,14 @@ body {
 
 .icon-postgres {
   margin-bottom: -15px;
+}
+
+.technologies-container {
+  min-height: 30vh;
+  -ms-grid-columns: (minmax(130px, 220px))[2];
+      grid-template-columns: repeat(2, minmax(130px, 220px));
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+  gap: 15px;
 }
 /*# sourceMappingURL=style.css.map */
