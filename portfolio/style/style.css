@@ -506,7 +506,6 @@ body {
   width: 280px;
   height: 180px;
   background-repeat: no-repeat;
-  /* background-position: center; */
   background-size: cover;
 }
 
@@ -516,6 +515,11 @@ body {
 
 .portfolio .schedule-img {
   background-image: url(../src/projects/planner/schedule.png);
+}
+
+.portfolio .tictactoe-img {
+  background-image: url(../src/projects/tictactoe/tictactoe-score.png);
+  background-position: center;
 }
 
 .portfolio .portafolio__links {

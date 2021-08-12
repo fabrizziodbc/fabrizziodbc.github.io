@@ -17,9 +17,9 @@ const tableroBase = [
   [9, "empty"],
 ];
 let tableroInicial = [];
-let wonCounter = 0;
-let lostCounter = 0;
-let tiedCounter = 0;
+let wonCounter = 1;
+let lostCounter = 1;
+let tiedCounter = 1;
 
 let turn = Math.round(Math.random());
 
@@ -113,6 +113,7 @@ function gameOver1(arreglo) {
       alert("¡Ganaste!");
       wonScore.innerHTML = wonCounter;
       wonCounter = wonCounter + 1;
+      turn = 1
       return true;
 
       break;
@@ -121,13 +122,16 @@ function gameOver1(arreglo) {
       alert("Perdiste :(");
       lostScore.innerHTML = lostCounter;
       lostCounter = lostCounter + 1;
+      turn = Math.round(Math.random());
       return true;
+     
       break;
 
     case draw(arreglo):
       alert("¡Empate!");
       tiedScore.innerHTML = tiedCounter;
       tiedCounter = tiedCounter + 1;
+      turn = Math.round(Math.random());
       return true;
       break;
 

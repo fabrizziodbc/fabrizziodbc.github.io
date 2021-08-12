@@ -351,7 +351,6 @@ body {
     width: 280px;
     height: 180px;
     background-repeat: no-repeat;
-    /* background-position: center; */
     background-size: cover;
   }
   .portfolio-img{
@@ -359,6 +358,10 @@ body {
   }
   .schedule-img{
     background-image: url(../src/projects/planner/schedule.png);
+  }
+  .tictactoe-img{
+    background-image: url(../src/projects/tictactoe/tictactoe-score.png);
+    background-position: center;
   }
   .portafolio__links {
     z-index: 2;
