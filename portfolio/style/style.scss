@@ -4,6 +4,8 @@
   --color-secondary: #cefe1a;
   --color-text: #8e8e8e;
 
+  --font__roboto: 'Roboto', sans-serif;
+
   --font-size-title: 3rem;
   --font-size-subtitle: 2.4rem;
   --font-size-text: 2rem;
@@ -35,6 +37,7 @@ html {
 }
 
 body {
+  font-family: var(--font__roboto);
   height: 100%;
   background-color: var(--color-background);
   color: var(--color-primary);
